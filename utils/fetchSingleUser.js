@@ -1,6 +1,6 @@
 export default async function fetchSingleUser(id, method = "GET") {
   try {
-    const response = await fetch(`http://localhost:3000/api/users/${id}`, {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/users/${id}`, {
       method: method,
       cache: "no-store",
     });

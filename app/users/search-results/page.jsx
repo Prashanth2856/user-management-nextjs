@@ -16,7 +16,7 @@ const SearchResults = () => {
     const fetchSearchResults = async () => {
       try {
         const res = await fetch(
-          `http://localhost:3000/api/users/search?name=${name}`
+          `${process.env.NEXT_PUBLIC_DOMAIN}/api/users/search?name=${name}`
         );
         if (res.ok) {
           const data = await res.json();

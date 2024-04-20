@@ -1,6 +1,6 @@
 export default async function PostUser(method = null, data = null, id = "") {
     try {
-        const response = await fetch(`http://localhost:3000/api/users/${id}`, {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/users/${id}`, {
             method: method,
             body: JSON.stringify(data),
             headers: {

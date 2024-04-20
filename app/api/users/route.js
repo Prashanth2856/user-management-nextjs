@@ -24,7 +24,7 @@ export const POST = async (req) => {
     await connect();
     const user = await req.json();
     await User.create(user);
-    return Response.redirect("http://localhost:3000/users");
+    return Response.redirect(`${process.env.NEXT_PUBLIC_DOMAIN}/users`);
   } catch (error) {
     console.log(error);
     return new Response("Something went wrong", { status: 500 });

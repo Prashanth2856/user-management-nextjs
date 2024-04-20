@@ -1,7 +1,7 @@
 export default async function fetchUsers(page = "", pageSize = "") {
   try {
     const response = await fetch(
-      `http://localhost:3000/api/users?page=${page}&pageSize=${pageSize}`,
+      `${process.env.NEXT_PUBLIC_DOMAIN}/api/users?page=${page}&pageSize=${pageSize}`,
       {
         cache: "no-store",
       }
