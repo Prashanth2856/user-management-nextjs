@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  /* gap: 1.2rem; */
+  background-color: rgb(0, 76, 197);
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.7% 1%;
+}
+
+.link {
+  background-color: #fff;
+  color: rgb(0, 76, 197);
+  border-radius: 0.25rem;
+  padding: 0.2% 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
